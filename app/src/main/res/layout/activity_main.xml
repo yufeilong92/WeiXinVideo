@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_main_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="video" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/image_photo_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp" />
+ <FrameLayout
+     android:id="@+id/fl"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <VideoView
+         android:layout_gravity="center"
+         android:id="@+id/videoView_main"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+
+     <ImageView
+         android:id="@+id/iv_thumb_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:scaleType="fitCenter"
+         android:visibility="gone"/>
+
+     <ImageView
+         android:id="@+id/iv_play_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:visibility="gone"
+         android:src="@drawable/ic_chat_play"/>
+ </FrameLayout>
+
+</LinearLayout>
